@@ -1,0 +1,102 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#new_book {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+
+    color: aliceblue;
+    background-color: #4CAF50;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#new_book_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#new_book_form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs e selects */
+#new_book_form input,
+#new_book_form select {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Botão de submit */
+#new_book_form #submit {
+  padding: 10px;
+  background-color: #4CAF50; /* verde */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+#new_book_form button:hover {
+  background-color: #45a049; /* verde mais escuro no hover */
+}
+
+/* Container da biblioteca */
+#library {
+  display: flex;
+  flex-wrap: wrap; /* permite que os livros quebrem linha */
+  gap: 20px; /* espaço entre os cards */
+  justify-content: center; /* centraliza horizontalmente */
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Cada livro (card) */
+#library h1, 
+#library p {
+  margin: 5px 0;
+}
+
+#library > div {
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito hover nos cards */
+#library > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
